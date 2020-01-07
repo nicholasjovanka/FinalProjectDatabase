@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Pane_Staff" prefHeight="900.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StaffController">
+   <children>
+      <ComboBox fx:id="Combo_OwnerId" layoutX="601.0" layoutY="676.0" prefHeight="25.0" prefWidth="115.0" />
+      <ComboBox fx:id="Combo_StoreId" layoutX="485.0" layoutY="676.0" prefHeight="25.0" prefWidth="112.0" />
+      <TableView fx:id="TableView_Staff" layoutX="174.0" layoutY="94.0" prefHeight="539.0" prefWidth="903.0">
+        <columns>
+          <TableColumn fx:id="Col_StaffId" prefWidth="56.000003814697266" text="Staff_Id" />
+          <TableColumn fx:id="Col_StaffName" prefWidth="253.59996032714844" text="Staff_Name" />
+            <TableColumn fx:id="Col_StoreId" prefWidth="115.73330688476562" text="Store_Id" />
+            <TableColumn fx:id="Col_OwnerId" minWidth="0.0" prefWidth="118.66668701171875" text="Owner_Id" />
+            <TableColumn fx:id="Col_JobType" prefWidth="165.59991455078125" text="Job_Type" />
+            <TableColumn fx:id="Col_Salary" minWidth="0.0" prefWidth="191.20000000000005" text="Monthly_Salary" />
+        </columns>
+      </TableView>
+      <TextField fx:id="Text_StaffId" layoutX="174.0" layoutY="676.0" prefHeight="25.0" prefWidth="52.0" />
+      <TextField fx:id="Text_StaffName" layoutX="231.0" layoutY="676.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="Text_JobType" layoutX="720.0" layoutY="676.0" prefHeight="25.0" prefWidth="162.0" />
+      <TextField fx:id="Text_Salary" layoutX="886.0" layoutY="676.0" prefHeight="25.0" prefWidth="188.0" />
+      <Label layoutX="174.0" layoutY="702.0" text="Staff_Id" />
+      <Label layoutX="231.0" layoutY="702.0" text="Staff_Name" />
+      <Label layoutX="485.0" layoutY="702.0" text="Store_Id" />
+      <Label layoutX="601.0" layoutY="702.0" text="Owner_Id" />
+      <Label layoutX="720.0" layoutY="702.0" text="Job_Type" />
+      <Label layoutX="886.0" layoutY="702.0" text="Monthly_Salary" />
+      <Button fx:id="Button_Insert" layoutX="998.0" layoutY="743.0" mnemonicParsing="false" onMouseClicked="#InsertClick" prefHeight="32.0" prefWidth="75.0" text="Insert" />
+      <Button fx:id="Button_Update" layoutX="914.0" layoutY="743.0" mnemonicParsing="false" onMouseClicked="#Update" prefHeight="32.0" prefWidth="75.0" text="Update" />
+      <Button fx:id="Button_Delete" layoutX="829.0" layoutY="743.0" mnemonicParsing="false" onMouseClicked="#DeleteSelected" prefHeight="32.0" prefWidth="75.0" text="Delete" />
+      <Button fx:id="Button_MainMenu" layoutX="175.0" layoutY="55.0" mnemonicParsing="false" onMouseClicked="#BackToMenu" prefHeight="25.0" prefWidth="99.0" text="Main Menu" />
+      <Button fx:id="Button_Refresh" layoutX="977.0" layoutY="55.0" mnemonicParsing="false" onMouseClicked="#Refresh" prefHeight="25.0" prefWidth="99.0" text="Refresh" />
+   </children>
+</AnchorPane>

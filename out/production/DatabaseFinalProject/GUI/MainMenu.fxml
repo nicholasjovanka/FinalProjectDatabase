@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainMenuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainMenuController">
+   <children>
+      <Button fx:id="StoreButton" layoutX="211.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#StoreScene" prefHeight="108.0" prefWidth="225.0" text="Stores">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="OwnerButton" layoutX="509.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#OwnerScene" prefHeight="108.0" prefWidth="225.0" text="Owner">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="OwnershipButton" layoutX="815.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#OwnershipScene" prefHeight="108.0" prefWidth="225.0" text="Ownership">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="SupplierButton" layoutX="211.0" layoutY="593.0" mnemonicParsing="false" onMouseClicked="#SupplierScene" prefHeight="108.0" prefWidth="225.0" text="Supplier">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="ItemButton" layoutX="509.0" layoutY="593.0" mnemonicParsing="false" onMouseClicked="#ItemMenu" prefHeight="108.0" prefWidth="225.0" text="Item">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="TransactionTypeButton" layoutX="815.0" layoutY="593.0" mnemonicParsing="false" onMouseClicked="#TransactionTypeScene" prefHeight="108.0" prefWidth="225.0" text="Transaction Type">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="TransactionButton" layoutX="663.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#TransactionMenu" prefHeight="108.0" prefWidth="225.0" text="Transaction">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="StaffButton" layoutX="348.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#StaffScene" prefHeight="108.0" prefWidth="225.0" text="Staff">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

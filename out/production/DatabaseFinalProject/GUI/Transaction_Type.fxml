@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="TransactionTypePane" prefHeight="900.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Transaction_Type_Controller">
+   <children>
+      <TableView fx:id="TransactionTypeTableView" layoutX="158.0" layoutY="31.0" prefHeight="601.0" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="157.0" AnchorPane.topAnchor="31.0">
+        <columns>
+          <TableColumn fx:id="Transaction_Type_Id" prefWidth="314.0" text="Transaction_Type_Id" />
+          <TableColumn fx:id="Transaction_Type" prefWidth="368.0" text="Transaction Type" />
+        </columns>
+      </TableView>
+      <Button fx:id="InsertButton" layoutX="474.0" layoutY="751.0" mnemonicParsing="false" onMouseClicked="#InsertClick" prefHeight="34.0" prefWidth="60.0" text="Insert" />
+      <Button fx:id="DeleteButton" layoutX="566.0" layoutY="751.0" mnemonicParsing="false" onMouseClicked="#DeleteSelected" prefHeight="34.0" prefWidth="60.0" text="Delete" />
+      <Button fx:id="Menu" layoutX="20.0" layoutY="851.0" mnemonicParsing="false" onMouseClicked="#BackToMenu" prefHeight="34.0" prefWidth="87.0" text="Main Menu" />
+      <Button fx:id="Refresh" layoutX="1159.0" layoutY="851.0" mnemonicParsing="false" onMouseClicked="#Refresh" prefHeight="34.0" prefWidth="69.0" text="Refresh" />
+      <TextField fx:id="IdText" layoutX="176.0" layoutY="751.0" prefHeight="34.0" prefWidth="102.0" />
+      <TextField fx:id="TypeText" layoutX="297.0" layoutY="751.0" prefHeight="34.0" prefWidth="102.0" />
+      <Label layoutX="415.0" layoutY="742.0" />
+      <Label layoutX="175.0" layoutY="793.0" text="Transaction Type Id" />
+      <Label layoutX="297.0" layoutY="793.0" text="Transaction Type" />
+   </children>
+</AnchorPane>
